@@ -1,0 +1,70 @@
+/**
+ * CSS for Admin Area
+ */
+.apx-link-wrap {
+	font-weight: bold;
+	padding-top: 10px;
+}
+.apx-link-count {
+	padding-bottom: 10px;
+}
+.apx-table {
+	width: 100%;
+	padding-top: 20px;
+}
+.apx-table th{
+	text-align: left;
+	padding: 10px 20px;
+	border-top: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+	font-size: 13px;
+}
+.apx-table td{
+	padding: 10px 20px;
+	border-bottom: 1px solid #EEEEEE;
+	font-size: 13px;
+}
+.apx-table th:first-child,
+.apx-table td:first-child {
+	padding: 10px 20px 10px 0;
+}
+.red-text {
+	color: red;
+}
+.column-all_links,
+.column-internal_links,
+.column-external_links{
+	width: 30px;
+}
+.column-all_links > span,
+.column-internal_links > span,
+.column-external_links > span{
+	position: relative;
+}
+.column-all_links .apx-all-links,
+.column-internal_links .apx-internal-links,
+.column-external_links .apx-external-links {
+	position: absolute;
+	transform: translateY(-50%);
+	height: 20px;
+}
+.column-all_links .apx-all-links::before,
+.column-internal_links .apx-internal-links::before,
+.column-external_links .apx-external-links::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+.column-all_links .apx-all-links::before {
+	background: url(../img/all_link.png) no-repeat;
+	background-size: 20px;
+}
+.column-internal_links .apx-internal-links::before {
+	background: url(../img/internal_link.png) no-repeat;
+	background-size: 20px;
+}
+.column-external_links .apx-external-links::before {
+	background: url(../img/external_link.png) no-repeat;
+	background-size: 20px;
+}
